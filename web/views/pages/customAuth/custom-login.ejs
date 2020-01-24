@@ -1,0 +1,75 @@
+<style>
+    input {
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 12px;
+        border-radius: 5px;
+        border: solid 1px rgb(215, 215, 215);
+        height: 40px;
+    }
+
+    button {
+        background-color: dodgerblue;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        padding: 12px;
+    }
+
+    .outer-div {
+        display: flex; 
+        justify-content: center; 
+        height: 100%;
+    }
+
+    .inner-div {
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+</style>
+
+
+<div class="outer-div">
+    <div class="inner-div">
+        <div style="display: flex; justify-content: center; margin-bottom: 15px;">
+            <img src="/images/aincrad.png">
+        </div>
+        <div style="background-color: white; padding: 24px;">
+        <div style="font-weight: bold; font-size: 16px; margin-bottom: 12px; text-align: center;"> 
+            Log into your account
+        </div>
+        <form style="display: flex;flex-direction: column">
+            <input id="email" name="emailAddress" type="text" placeholder="Email">
+            <input id="password"name="password" type="password" placeholder="Password">
+            <button onclick="handleLogin()" type="button">Login</button>
+        </form>
+        Don't have an acoount? <a href="/signup">Sign up</a>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+     async function handleLogin(){
+        const email = document.getElementById("email").value
+        const password = document.getElementById("password").value
+        const formData = new FormData()
+        formData.append("emailAddress", email)
+        formData.append("password", password)
+        console.log(email)
+
+        try{
+            const response =  await axios.put('/api/v1/entrance/login', formData)
+            document.location = "/home"
+            console.log(response)
+        }catch (error){
+            console.log("Login error:")
+            console.error(error.toString())
+        }
+       
+    }
+</script>

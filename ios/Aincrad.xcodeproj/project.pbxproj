@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		701B9B4423AF5B0F0066D760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B9B4323AF5B0F0066D760 /* AppDelegate.swift */; };
+		701B9B4A23AF5B100066D760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701B9B4923AF5B100066D760 /* Assets.xcassets */; };
+		701B9B5023AF5B100066D760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701B9B4E23AF5B100066D760 /* LaunchScreen.storyboard */; };
+		701B9B5823AF5B640066D760 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B9B5723AF5B640066D760 /* HomeViewController.swift */; };
+		708C2FAF23B5C23200DDD243 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708C2FAE23B5C23200DDD243 /* SignUpViewController.swift */; };
+		708C2FB123BEEB7900DDD243 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708C2FB023BEEB7900DDD243 /* CreatePostViewController.swift */; };
+		70A094B123B1E1BE00B848AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A094B023B1E1BE00B848AC /* LoginViewController.swift */; };
+		70B8746523DAB16500C9CC98 /* Postcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8746423DAB16500C9CC98 /* Postcell.swift */; };
+		D920A41F6B5CCAD0BC5D77AC /* Pods_Aincrad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A32C5CDFC9C1C25CB13B1D /* Pods_Aincrad.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23642C85B9E03FC7828EB6EC /* Pods-Aincrad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aincrad.release.xcconfig"; path = "Target Support Files/Pods-Aincrad/Pods-Aincrad.release.xcconfig"; sourceTree = "<group>"; };
+		701B9B4023AF5B0F0066D760 /* Aincrad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aincrad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		701B9B4323AF5B0F0066D760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		701B9B4923AF5B100066D760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		701B9B4F23AF5B100066D760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		701B9B5123AF5B100066D760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701B9B5723AF5B640066D760 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		708C2FAE23B5C23200DDD243 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		708C2FB023BEEB7900DDD243 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		708C2FB223BF105800DDD243 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		709D6D4123B300C900612294 /* libJGProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJGProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A094B023B1E1BE00B848AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70A094B223B2FC2700B848AC /* libJGProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJGProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A094B423B2FDBE00B848AC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		70A094B623B2FDC800B848AC /* libJGProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJGProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B8746423DAB16500C9CC98 /* Postcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcell.swift; sourceTree = "<group>"; };
+		83A32C5CDFC9C1C25CB13B1D /* Pods_Aincrad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aincrad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7265D4CB246F486B2B34D9 /* Pods-Aincrad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aincrad.debug.xcconfig"; path = "Target Support Files/Pods-Aincrad/Pods-Aincrad.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		701B9B3D23AF5B0F0066D760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D920A41F6B5CCAD0BC5D77AC /* Pods_Aincrad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		701B9B3723AF5B0F0066D760 = {
+			isa = PBXGroup;
+			children = (
+				701B9B4223AF5B0F0066D760 /* Aincrad */,
+				701B9B4123AF5B0F0066D760 /* Products */,
+				FE4309D586A89146867336F3 /* Pods */,
+				C08C34BE69E0A8F5106E93C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		701B9B4123AF5B0F0066D760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				701B9B4023AF5B0F0066D760 /* Aincrad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		701B9B4223AF5B0F0066D760 /* Aincrad */ = {
+			isa = PBXGroup;
+			children = (
+				701B9B4323AF5B0F0066D760 /* AppDelegate.swift */,
+				701B9B5723AF5B640066D760 /* HomeViewController.swift */,
+				708C2FB023BEEB7900DDD243 /* CreatePostViewController.swift */,
+				70A094B023B1E1BE00B848AC /* LoginViewController.swift */,
+				708C2FAE23B5C23200DDD243 /* SignUpViewController.swift */,
+				701B9B4923AF5B100066D760 /* Assets.xcassets */,
+				701B9B4E23AF5B100066D760 /* LaunchScreen.storyboard */,
+				701B9B5123AF5B100066D760 /* Info.plist */,
+				70B8746423DAB16500C9CC98 /* Postcell.swift */,
+			);
+			path = Aincrad;
+			sourceTree = "<group>";
+		};
+		C08C34BE69E0A8F5106E93C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				708C2FB223BF105800DDD243 /* SDWebImage.framework */,
+				709D6D4123B300C900612294 /* libJGProgressHUD.a */,
+				70A094B623B2FDC800B848AC /* libJGProgressHUD.a */,
+				70A094B423B2FDBE00B848AC /* AddressBookUI.framework */,
+				70A094B223B2FC2700B848AC /* libJGProgressHUD.a */,
+				83A32C5CDFC9C1C25CB13B1D /* Pods_Aincrad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE4309D586A89146867336F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA7265D4CB246F486B2B34D9 /* Pods-Aincrad.debug.xcconfig */,
+				23642C85B9E03FC7828EB6EC /* Pods-Aincrad.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		701B9B3F23AF5B0F0066D760 /* Aincrad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701B9B5423AF5B100066D760 /* Build configuration list for PBXNativeTarget "Aincrad" */;
+			buildPhases = (
+				0B429F75E86C9464BC420BCE /* [CP] Check Pods Manifest.lock */,
+				701B9B3C23AF5B0F0066D760 /* Sources */,
+				701B9B3D23AF5B0F0066D760 /* Frameworks */,
+				701B9B3E23AF5B0F0066D760 /* Resources */,
+				87A3132D2E0E7182A73821A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aincrad;
+			productName = Aincrad;
+			productReference = 701B9B4023AF5B0F0066D760 /* Aincrad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		701B9B3823AF5B0F0066D760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = com.SherzodMakhmudov;
+				TargetAttributes = {
+					701B9B3F23AF5B0F0066D760 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 701B9B3B23AF5B0F0066D760 /* Build configuration list for PBXProject "Aincrad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 701B9B3723AF5B0F0066D760;
+			productRefGroup = 701B9B4123AF5B0F0066D760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				701B9B3F23AF5B0F0066D760 /* Aincrad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		701B9B3E23AF5B0F0066D760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701B9B5023AF5B100066D760 /* LaunchScreen.storyboard in Resources */,
+				701B9B4A23AF5B100066D760 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B429F75E86C9464BC420BCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aincrad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A3132D2E0E7182A73821A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aincrad/Pods-Aincrad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aincrad/Pods-Aincrad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aincrad/Pods-Aincrad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		701B9B3C23AF5B0F0066D760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708C2FB123BEEB7900DDD243 /* CreatePostViewController.swift in Sources */,
+				70B8746523DAB16500C9CC98 /* Postcell.swift in Sources */,
+				70A094B123B1E1BE00B848AC /* LoginViewController.swift in Sources */,
+				701B9B4423AF5B0F0066D760 /* AppDelegate.swift in Sources */,
+				708C2FAF23B5C23200DDD243 /* SignUpViewController.swift in Sources */,
+				701B9B5823AF5B640066D760 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		701B9B4E23AF5B100066D760 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701B9B4F23AF5B100066D760 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		701B9B5223AF5B100066D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		701B9B5323AF5B100066D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		701B9B5523AF5B100066D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7265D4CB246F486B2B34D9 /* Pods-Aincrad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6X9PM7C5A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Aincrad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherzodMakhmudov.Aincrad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		701B9B5623AF5B100066D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23642C85B9E03FC7828EB6EC /* Pods-Aincrad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6X9PM7C5A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Aincrad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherzodMakhmudov.Aincrad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		701B9B3B23AF5B0F0066D760 /* Build configuration list for PBXProject "Aincrad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701B9B5223AF5B100066D760 /* Debug */,
+				701B9B5323AF5B100066D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701B9B5423AF5B100066D760 /* Build configuration list for PBXNativeTarget "Aincrad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701B9B5523AF5B100066D760 /* Debug */,
+				701B9B5623AF5B100066D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 701B9B3823AF5B0F0066D760 /* Project object */;
+}

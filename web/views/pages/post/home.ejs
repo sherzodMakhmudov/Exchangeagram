@@ -1,0 +1,36 @@
+<script>
+    function onFileChange(event) {
+        console.log(event)
+        const file = event.target.files[0]
+        const imageSrc = window.URL.createObjectURL(file)
+        document.getElementById("selectedImage").style.display = "block"
+        document.getElementById("selectedImage").style.maxWidth = "350px"
+        
+        document.getElementById("selectedImage").src = imageSrc
+    }
+</script>
+
+<div style="background-color: rgb(238, 238, 238); padding: 24px;">
+    <form method="POST" action="/post" style="margin-bottom: 12px;" enctype="multipart/form-data">
+        <input name='postBody' type="text", placeholder="Enter post text">
+        <button type="submit">Create Post</button> <br><br>
+        <div>
+            <input name= 'imagefile' onchange="onFileChange(event)" type="file"/><br><br>
+            <img id="selectedImage" src="" style="display: none">
+        </div>
+    </form>
+    <p>Below are my posts:</p>
+    <% allPosts.forEach(p => { %>
+        <div style = "background-color: white; padding: 16px; margin-bottom: 16px;">
+            <div style="color: black; font-weight: bold">
+                <%= p.user.fullName %>
+            </div>
+            <div style="color:rgb(186, 186, 186); font-size: 12px;">
+                <%= new Date(p.createdAt).toLocaleTimeString() + " " + new Date(p.createdAt).toLocaleDateString() %>
+            </div>
+            <%=p.text %>
+            <img src="<%=p.imageUrl %>" style="max-width: 100px;">
+        </div>
+    <% }) %> 
+</div>
+
