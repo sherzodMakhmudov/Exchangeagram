@@ -49,7 +49,7 @@ class HomeViewController: UITableViewController, UINavigationControllerDelegate,
     }
     
     var posts = [Post]()
-    @objc fileprivate func fetchPosts() {
+    @objc func fetchPosts() {
         //Tutorial 10 shows how to connect ios to a server
         
         guard let url = URL(string: "http://localhost:1337/home") else { return }
@@ -81,40 +81,45 @@ class HomeViewController: UITableViewController, UINavigationControllerDelegate,
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.originalImage] as? UIImage else {return}
         dismiss(animated: true) {
-            guard let url = URL(string: "http://localhost:1337/post") else { return }
             
-            Alamofire.upload(multipartFormData: { (formData) in
-                //posting text
-                formData.append(Data("Coming from iphone".utf8), withName: "postBody")
-                //posting image
-                guard let imageData = image.jpegData(compressionQuality: 0.5) else {return}
-                formData.append(imageData, withName: "imagefile", fileName: "doesn't_matter", mimeType: "image/jpg")
-                
-            }, to: url) { (response) in
-                switch response{
-                case .failure(let error):
-                    print(error)
-                case .success(request: let uploadRequest, _ , _ ):
-                    uploadRequest.uploadProgress { (progress) in
-                        print(progress.fractionCompleted)
-                    }
-                    uploadRequest.responseJSON { (dataResponse) in
-                        if let error = dataResponse.error{
-                            print("error:", error)
-                        }
-                        
-                        if let code = dataResponse.response?.statusCode, code >= 300{
-                            print("error code:", code)
-                            return
-                        }
-                        
-                        let respString = String(data: dataResponse.data ?? Data(), encoding: .utf8)
-                        print("Successfully created a post, here is the response:")
-                        print(respString ?? "")
-                        self.fetchPosts()
-                    }
-            }
-        }
+            let createPostViewController = CreatePostViewController(selectedImage: image)
+            createPostViewController.homeController = self
+            self.present(createPostViewController, animated: true, completion: nil)
+            
+//           guard let url = URL(string: "http://localhost:1337/post") else { return }
+            
+//            Alamofire.upload(multipartFormData: { (formData) in
+//                //posting text
+//                formData.append(Data("Coming from iphone".utf8), withName: "postBody")
+//                //posting image
+//                guard let imageData = image.jpegData(compressionQuality: 0.5) else {return}
+//                formData.append(imageData, withName: "imagefile", fileName: "doesn't_matter", mimeType: "image/jpg")
+//
+//            }, to: url) { (response) in
+//                switch response{
+//                case .failure(let error):
+//                    print(error)
+//                case .success(request: let uploadRequest, _ , _ ):
+//                    uploadRequest.uploadProgress { (progress) in
+//                        print(progress.fractionCompleted)
+//                    }
+//                    uploadRequest.responseJSON { (dataResponse) in
+//                        if let error = dataResponse.error{
+//                            print("error:", error)
+//                        }
+//
+//                        if let code = dataResponse.response?.statusCode, code >= 300{
+//                            print("error code:", code)
+//                            return
+//                        }
+//
+//                        let respString = String(data: dataResponse.data ?? Data(), encoding: .utf8)
+//                        print("Successfully created a post, here is the response:")
+//                        print(respString ?? "")
+//                        self.fetchPosts()
+//                    }
+//            }
+//        }
     }
 }
     
@@ -123,16 +128,16 @@ class HomeViewController: UITableViewController, UINavigationControllerDelegate,
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellId)
+        let cell = PostCell(style: .subtitle, reuseIdentifier: cellId)
         let post = posts[indexPath.row]
-        cell.textLabel?.text = post.user.fullName
-        cell.detailTextLabel?.text = post.text
+        cell.usernameLabel.text = post.user.fullName
+        cell.postTextLabel.text = post.text
+        cell.postImageView.sd_setImage(with: URL(string:post.imageUrl))
         
-        cell.imageView?.sd_setImage(with: URL(string: post.imageUrl))
+        
         return cell
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(posts.count)
         return posts.count
     }
 
