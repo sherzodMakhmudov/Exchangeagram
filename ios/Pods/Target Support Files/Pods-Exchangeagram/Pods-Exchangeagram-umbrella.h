@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AincradVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AincradVersionString[];
+FOUNDATION_EXPORT double Pods_ExchangeagramVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ExchangeagramVersionString[];
 

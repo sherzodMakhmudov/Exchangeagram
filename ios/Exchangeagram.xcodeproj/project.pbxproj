@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533FD3A166E45A0F1ED35235 /* Pods_Exchangeagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9C5DC8DEA261258746C87E /* Pods_Exchangeagram.framework */; };
 		701B9B4423AF5B0F0066D760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B9B4323AF5B0F0066D760 /* AppDelegate.swift */; };
 		701B9B4A23AF5B100066D760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701B9B4923AF5B100066D760 /* Assets.xcassets */; };
 		701B9B5023AF5B100066D760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701B9B4E23AF5B100066D760 /* LaunchScreen.storyboard */; };
@@ -15,12 +16,14 @@
 		708C2FB123BEEB7900DDD243 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708C2FB023BEEB7900DDD243 /* CreatePostViewController.swift */; };
 		70A094B123B1E1BE00B848AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A094B023B1E1BE00B848AC /* LoginViewController.swift */; };
 		70B8746523DAB16500C9CC98 /* Postcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8746423DAB16500C9CC98 /* Postcell.swift */; };
-		D920A41F6B5CCAD0BC5D77AC /* Pods_Aincrad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A32C5CDFC9C1C25CB13B1D /* Pods_Aincrad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046FCF4AC7CB441B5EE5181A /* Pods-Exchangeagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangeagram.release.xcconfig"; path = "Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram.release.xcconfig"; sourceTree = "<group>"; };
 		23642C85B9E03FC7828EB6EC /* Pods-Aincrad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aincrad.release.xcconfig"; path = "Target Support Files/Pods-Aincrad/Pods-Aincrad.release.xcconfig"; sourceTree = "<group>"; };
-		701B9B4023AF5B0F0066D760 /* Aincrad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aincrad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A18C6928B910051D372B5C9 /* Pods-Exchangeagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangeagram.debug.xcconfig"; path = "Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram.debug.xcconfig"; sourceTree = "<group>"; };
+		5A9C5DC8DEA261258746C87E /* Pods_Exchangeagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exchangeagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		701B9B4023AF5B0F0066D760 /* Exchangeagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchangeagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701B9B4323AF5B0F0066D760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		701B9B4923AF5B100066D760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		701B9B4F23AF5B100066D760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,7 +38,6 @@
 		70A094B423B2FDBE00B848AC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		70A094B623B2FDC800B848AC /* libJGProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJGProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B8746423DAB16500C9CC98 /* Postcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcell.swift; sourceTree = "<group>"; };
-		83A32C5CDFC9C1C25CB13B1D /* Pods_Aincrad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aincrad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7265D4CB246F486B2B34D9 /* Pods-Aincrad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aincrad.debug.xcconfig"; path = "Target Support Files/Pods-Aincrad/Pods-Aincrad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D920A41F6B5CCAD0BC5D77AC /* Pods_Aincrad.framework in Frameworks */,
+				533FD3A166E45A0F1ED35235 /* Pods_Exchangeagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +56,7 @@
 		701B9B3723AF5B0F0066D760 = {
 			isa = PBXGroup;
 			children = (
-				701B9B4223AF5B0F0066D760 /* Aincrad */,
+				701B9B4223AF5B0F0066D760 /* Exchangeagram */,
 				701B9B4123AF5B0F0066D760 /* Products */,
 				FE4309D586A89146867336F3 /* Pods */,
 				C08C34BE69E0A8F5106E93C6 /* Frameworks */,
@@ -64,12 +66,12 @@
 		701B9B4123AF5B0F0066D760 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				701B9B4023AF5B0F0066D760 /* Aincrad.app */,
+				701B9B4023AF5B0F0066D760 /* Exchangeagram.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		701B9B4223AF5B0F0066D760 /* Aincrad */ = {
+		701B9B4223AF5B0F0066D760 /* Exchangeagram */ = {
 			isa = PBXGroup;
 			children = (
 				701B9B4323AF5B0F0066D760 /* AppDelegate.swift */,
@@ -82,7 +84,7 @@
 				701B9B5123AF5B100066D760 /* Info.plist */,
 				70B8746423DAB16500C9CC98 /* Postcell.swift */,
 			);
-			path = Aincrad;
+			path = Exchangeagram;
 			sourceTree = "<group>";
 		};
 		C08C34BE69E0A8F5106E93C6 /* Frameworks */ = {
@@ -93,7 +95,7 @@
 				70A094B623B2FDC800B848AC /* libJGProgressHUD.a */,
 				70A094B423B2FDBE00B848AC /* AddressBookUI.framework */,
 				70A094B223B2FC2700B848AC /* libJGProgressHUD.a */,
-				83A32C5CDFC9C1C25CB13B1D /* Pods_Aincrad.framework */,
+				5A9C5DC8DEA261258746C87E /* Pods_Exchangeagram.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +105,8 @@
 			children = (
 				FA7265D4CB246F486B2B34D9 /* Pods-Aincrad.debug.xcconfig */,
 				23642C85B9E03FC7828EB6EC /* Pods-Aincrad.release.xcconfig */,
+				3A18C6928B910051D372B5C9 /* Pods-Exchangeagram.debug.xcconfig */,
+				046FCF4AC7CB441B5EE5181A /* Pods-Exchangeagram.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -110,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		701B9B3F23AF5B0F0066D760 /* Aincrad */ = {
+		701B9B3F23AF5B0F0066D760 /* Exchangeagram */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 701B9B5423AF5B100066D760 /* Build configuration list for PBXNativeTarget "Aincrad" */;
+			buildConfigurationList = 701B9B5423AF5B100066D760 /* Build configuration list for PBXNativeTarget "Exchangeagram" */;
 			buildPhases = (
 				0B429F75E86C9464BC420BCE /* [CP] Check Pods Manifest.lock */,
 				701B9B3C23AF5B0F0066D760 /* Sources */,
@@ -124,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = Aincrad;
+			name = Exchangeagram;
 			productName = Aincrad;
-			productReference = 701B9B4023AF5B0F0066D760 /* Aincrad.app */;
+			productReference = 701B9B4023AF5B0F0066D760 /* Exchangeagram.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 701B9B3B23AF5B0F0066D760 /* Build configuration list for PBXProject "Aincrad" */;
+			buildConfigurationList = 701B9B3B23AF5B0F0066D760 /* Build configuration list for PBXProject "Exchangeagram" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				701B9B3F23AF5B0F0066D760 /* Aincrad */,
+				701B9B3F23AF5B0F0066D760 /* Exchangeagram */,
 			);
 		};
 /* End PBXProject section */
@@ -190,7 +194,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Aincrad-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Exchangeagram-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -203,15 +207,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Aincrad/Pods-Aincrad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Aincrad/Pods-Aincrad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aincrad/Pods-Aincrad-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -360,20 +364,20 @@
 		};
 		701B9B5523AF5B100066D760 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA7265D4CB246F486B2B34D9 /* Pods-Aincrad.debug.xcconfig */;
+			baseConfigurationReference = 3A18C6928B910051D372B5C9 /* Pods-Exchangeagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6X9PM7C5A;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Aincrad/Info.plist;
+				INFOPLIST_FILE = Exchangeagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SherzodMakhmudov.Aincrad;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherzodMakhmudov.Exchangeagram;
+				PRODUCT_NAME = Exchangeagram;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,20 +385,20 @@
 		};
 		701B9B5623AF5B100066D760 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23642C85B9E03FC7828EB6EC /* Pods-Aincrad.release.xcconfig */;
+			baseConfigurationReference = 046FCF4AC7CB441B5EE5181A /* Pods-Exchangeagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6X9PM7C5A;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Aincrad/Info.plist;
+				INFOPLIST_FILE = Exchangeagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SherzodMakhmudov.Aincrad;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherzodMakhmudov.Exchangeagram;
+				PRODUCT_NAME = Exchangeagram;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		701B9B3B23AF5B0F0066D760 /* Build configuration list for PBXProject "Aincrad" */ = {
+		701B9B3B23AF5B0F0066D760 /* Build configuration list for PBXProject "Exchangeagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				701B9B5223AF5B100066D760 /* Debug */,
@@ -412,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		701B9B5423AF5B100066D760 /* Build configuration list for PBXNativeTarget "Aincrad" */ = {
+		701B9B5423AF5B100066D760 /* Build configuration list for PBXNativeTarget "Exchangeagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				701B9B5523AF5B100066D760 /* Debug */,

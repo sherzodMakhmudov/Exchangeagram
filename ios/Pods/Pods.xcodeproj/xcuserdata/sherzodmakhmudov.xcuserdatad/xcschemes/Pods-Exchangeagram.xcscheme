@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "21F6C6F5900DA9415A583463864F99D9"
-               BuildableName = "Pods_Aincrad.framework"
-               BlueprintName = "Pods-Aincrad"
+               BlueprintIdentifier = "03606A16871C38903A2411E61B5C54A4"
+               BuildableName = "Pods_Exchangeagram.framework"
+               BlueprintName = "Pods-Exchangeagram"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

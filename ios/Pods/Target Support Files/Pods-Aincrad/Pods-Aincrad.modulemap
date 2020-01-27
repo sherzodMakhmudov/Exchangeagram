@@ -1,6 +1,0 @@
-framework module Pods_Aincrad {
-  umbrella header "Pods-Aincrad-umbrella.h"
-
-  export *
-  module * { export * }
-}

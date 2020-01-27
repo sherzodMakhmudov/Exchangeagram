@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LBTATools
 import JGProgressHUD
 import Alamofire
 
@@ -15,15 +14,15 @@ class CreatePostViewController: UIViewController, UITextViewDelegate{
     
       let selectedImage: UIImage
       
-      weak var homeController: HomeViewController? // use this upon dismiss later
+      weak var homeViewController: HomeViewController? // use this upon dismiss later
       
       init(selectedImage: UIImage) {
           self.selectedImage = selectedImage
           super.init(nibName: nil, bundle: nil)
-          imageView.image = selectedImage
+          selectedImageView.image = selectedImage
       }
       
-      let imageView = UIImageView(image: nil, contentMode: .scaleAspectFill)
+      let selectedImageView = UIImageView(image: nil, contentMode: .scaleAspectFill)
       
       lazy var postButton = UIButton(title: "Post", titleColor: .white, font: .boldSystemFont(ofSize: 14), backgroundColor: #colorLiteral(red: 0.1127949134, green: 0.5649430156, blue: 0.9994879365, alpha: 1), target: self, action: #selector(handlePost))
       
@@ -40,20 +39,13 @@ class CreatePostViewController: UIViewController, UITextViewDelegate{
           view.backgroundColor = .white
           
           // here is the layout of our UI
-          postButton.layer.cornerRadius = 5
-          
-          view.stack(imageView.withHeight(300),
-                     view.stack(postButton.withHeight(40),
-                                placeholderLabel,
-                                spacing: 16).padLeft(16).padRight(16),
-                     UIView(),
-                     spacing: 16)
+        postButton.layer.cornerRadius = 5
+        
           
           // setup UITextView on top of placeholder label, UITextView does not have a placeholder property
           view.addSubview(postBodyTextView)
           postBodyTextView.backgroundColor = .clear
           postBodyTextView.delegate = self
-          postBodyTextView.anchor(top: placeholderLabel.bottomAnchor, leading: placeholderLabel.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: -25, left: -6, bottom: 0, right: 16))
       }
       
       func textViewDidChange(_ textView: UITextView) {
@@ -109,7 +101,7 @@ class CreatePostViewController: UIViewController, UITextViewDelegate{
                        print("Successfully created post, here is the response:")
                        
                        self.dismiss(animated: true) {
-                        self.homeController?.fetchPosts()
+                        self.homeViewController?.fetchPosts()
                        }
                    }
                }

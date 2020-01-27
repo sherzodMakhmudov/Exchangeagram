@@ -6,7 +6,6 @@
 //  Copyright © 2019 com.SherzodMakhmudov. All rights reserved.
 //
 
-import LBTATools
 import Alamofire
 import SDWebImage
 
@@ -31,7 +30,7 @@ class HomeViewController: UITableViewController, UINavigationControllerDelegate,
         
         showCookies()
 
-        navigationItem.rightBarButtonItems = [.init(title: "Fetch posts", style: .plain, target: self, action: #selector(fetchPosts)),
+        navigationItem.rightBarButtonItems = [.init(title: "My posts", style: .plain, target: self, action: #selector(fetchPosts)),
                                               .init(title: "Create post", style: .plain, target: self, action: #selector(createPost))]
         navigationItem.leftBarButtonItem = .init(title: "Log In", style: .plain, target: self, action: #selector(handleLogin))
     }
@@ -83,43 +82,9 @@ class HomeViewController: UITableViewController, UINavigationControllerDelegate,
         dismiss(animated: true) {
             
             let createPostViewController = CreatePostViewController(selectedImage: image)
-            createPostViewController.homeController = self
+            createPostViewController.homeViewController = self
             self.present(createPostViewController, animated: true, completion: nil)
-            
-//           guard let url = URL(string: "http://localhost:1337/post") else { return }
-            
-//            Alamofire.upload(multipartFormData: { (formData) in
-//                //posting text
-//                formData.append(Data("Coming from iphone".utf8), withName: "postBody")
-//                //posting image
-//                guard let imageData = image.jpegData(compressionQuality: 0.5) else {return}
-//                formData.append(imageData, withName: "imagefile", fileName: "doesn't_matter", mimeType: "image/jpg")
-//
-//            }, to: url) { (response) in
-//                switch response{
-//                case .failure(let error):
-//                    print(error)
-//                case .success(request: let uploadRequest, _ , _ ):
-//                    uploadRequest.uploadProgress { (progress) in
-//                        print(progress.fractionCompleted)
-//                    }
-//                    uploadRequest.responseJSON { (dataResponse) in
-//                        if let error = dataResponse.error{
-//                            print("error:", error)
-//                        }
-//
-//                        if let code = dataResponse.response?.statusCode, code >= 300{
-//                            print("error code:", code)
-//                            return
-//                        }
-//
-//                        let respString = String(data: dataResponse.data ?? Data(), encoding: .utf8)
-//                        print("Successfully created a post, here is the response:")
-//                        print(respString ?? "")
-//                        self.fetchPosts()
-//                    }
-//            }
-//        }
+
     }
 }
     
